@@ -1,0 +1,12 @@
+1. Doplňte aplikaci o další typy trojúhelníků:
+- obecný trojúhelník, zadány tři strany,
+- obecný trojúhelník, zadány dvě strany a úhel,
+- obecný trojúhelník, zadány dva úhly a strana.
+U všech typů doplňte i kontrolu, zda zadané údaje opravdu představují trojúhelník (libovolný úhel
+i součet dvou úhlů musí být menší než 180 stupňů, součet dvou stran trojúhelníka musí být vždy
+větší než třetí strana atd.).
+
+2. Upravte aplikaci, aby se varianty při výpisu číslovaly od jedničky a ne od nuly.
+
+3. Nastudujte v dokumentaci Javy možnosti rozšiřování výčtového typu enum a zkuste sloučit třídu
+Varianta a výčtový typ TypTrojuhelnika do jednoho výčtového typu
