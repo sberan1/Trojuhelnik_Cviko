@@ -78,15 +78,23 @@ public class Trojuhelnik
      * @param stranaB delka strany B
      * @param stranaC delka strany C
      * @param uhelAlpha velikost uhlu Alpha
-     * @return instance trojuhelnik podle zadani
+     * @return instance tridy Trojuhelnik podle zadani
      */
     public static Trojuhelnik getObecnyBCAlpha(double stranaB, double stranaC, double uhelAlpha){
         if (uhelAlpha < 180){
-            return new Trojuhelnik(Math.sqrt(Math.pow(stranaB, 2)), Math.pow(stranaC, 2), 2*stranaB*stranaC*Math.cos(uhelAlpha));
+            return new Trojuhelnik(Math.sqrt(Math.pow(stranaB, 2) + Math.pow(stranaC, 2) + 2*stranaB*stranaC*Math.cos(uhelAlpha)), stranaB, stranaC);
         }
         return null;
     }
 
+    /**
+     * staticka metoda pro ziskani obecneho trojuhelnik se zadanyma dvema uhlama a prilehlou stranou
+     *
+     * @param uhelAlpha velikost uhlu Alpha
+     * @param uhelBeta velikost uhlu Beta
+     * @param stranaC delka strany C
+     * @return instance tridy Trojuhelnik podle zadani
+     */
     public static Trojuhelnik getObecnyAlphaBetaC(double uhelAlpha, double uhelBeta, double stranaC){
         if (uhelAlpha+uhelBeta < 180){
             double uhelGama = 180 - uhelAlpha - uhelBeta;

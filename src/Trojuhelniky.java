@@ -21,14 +21,14 @@ public class Trojuhelniky {
         varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.PRAVOUHLY_A_C, "Pravoúhlý trojúhelník, známy strany A a C",
                 "délka strany A", "délka strany C", null));
         varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.ROVNOSTRANNY, "Rovnostranný trojúhelník, známa strany A",
-                "délka strany A", "null", null));
-        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.PRAVOUHLY_A_C, "Pravoúhlý trojúhelník, známy strany A a C",
-                "délka strany A", "délka strany C", null));
-        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.PRAVOUHLY_A_C, "Pravoúhlý trojúhelník, známy strany A a C",
-                "délka strany A", "délka strany C", null));
-        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.PRAVOUHLY_A_C, "Pravoúhlý trojúhelník, známy strany A a C",
-                "délka strany A", "délka strany C", null));
-        
+                "délka strany A", null, null));
+        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.OBECNY_A_B_C, "Obecný trojúhelník, známy strany A, B, C",
+                "délka strany A", "délka strany B", "délka strany C"));
+        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.OBECNY_B_C_ALPHA, "Obecný trojúhelník, známy strany B a C, úhel Alpha",
+                "délka strany B", "délka strany C", "velikost úhlu Alpha"));
+        varianty.add(new TypTrojuhelnika.Varianta(TypTrojuhelnika.OBECNY_ALPHA_BETA_C, "Obecný trojúhelník, známy úhly Alpha a Beta, strana C",
+                "velikost úhlu Alpha", "velikost úhlu Beta", "délka strany C" ));
+
         vstup = new CteniZKonsole();
     }
     
@@ -72,7 +72,7 @@ public class Trojuhelniky {
             System.out.println("!!! metoda getTrojuhelnik nevratila pro zadane parametry trojuhelnik !!!!");
             System.out.println("\t typ: " + var.getTyp());
             for (int i=0; i < parametry.length; i++) {
-                System.out.printf("\t parametry[%d] : %f%n",i,parametry[i]);
+                System.out.printf("\t parametry[%d] : %f%n",i+1,parametry[i]);
             }   
         }
         else {

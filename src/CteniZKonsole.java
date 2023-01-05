@@ -54,7 +54,7 @@ public class CteniZKonsole
                 System.out.print(prompt+": ");
                 radek = vstup.readLine();
                 cislo = Integer.parseInt(radek);
-                return cislo;
+                return cislo - 1;
             }
             catch (IOException e) {
                 System.out.println(e);
